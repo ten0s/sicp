@@ -1,0 +1,15 @@
+(define (tree-map fn tree)
+  (cond ((null? tree) '())
+		((not (pair? tree)) (fn tree))
+		(else (cons (square-tree (car tree))
+					(square-tree (cdr tree))))))
+
+(define (tree-map fn tree)
+  (map (lambda (sub-tree)
+		 (if (pair? sub-tree)
+			 (square-tree sub-tree)
+			 (fn sub-tree)))
+	   tree))
+
+(define (square-tree tree)
+  (tree-map square tree))

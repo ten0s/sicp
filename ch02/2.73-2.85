@@ -1,0 +1,2 @@
+Instead of just doing these execises, I've implemented the entire generic system in Erlang.
+See ./GenErlic directory.

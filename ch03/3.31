@@ -1,0 +1,8 @@
+When a new action procedure is added to a wire, the procedure is immediately run.
+This initialization is necessary because it's just like connecting a wire to a power
+supply. The wire should get a new signal after a delay specified by the black box
+it's connected to. If it's not initialized immediately that the wire's signal won't
+be updated until the previous wire connected the black box will change its signal.
+So, if we have as an example the half adder and if the signals don't propagate
+immediately, then after initializing the whole half adder the S and C values don't
+change their values until A and B values change their.

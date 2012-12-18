@@ -1,0 +1,16 @@
+(define (double x)
+  (+ x x))
+(define (halve x)
+  (/ x 2))
+(define (even? x)
+  (= (remainder x 2) 0))
+
+; T O(logn)
+; S O(1)
+(define (fast-mult a b)
+  (fast-mult-iter a b 0))
+
+(define (fast-mult-iter a b acc)
+  (cond ((= b 0) acc)
+		((even? b) (fast-mult-iter (double a) (halve b) acc))
+		(else (fast-mult-iter a (- b 1) (+ a acc)))))

@@ -1,0 +1,10 @@
+Erlang Picture Language from SICP
+
+Build:
+$ erlc *.erl
+
+Run:
+$ erl
+1> test:draw_all().
+
+You will get a number of pngs files in your current directory.

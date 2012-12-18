@@ -1,0 +1,4 @@
+My implementation's of `encode-symbol' order of growth,
+based on the number of `equal?' operations
+to encode the most frequent symbol is O(1),
+to encode the least frequent symbol is O(n^2).

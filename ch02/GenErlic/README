@@ -1,0 +1,9 @@
+Apparently, it's a wrong way to implement this in Erlang.
+Even though it doesn't feel right, it's still a good exercise.
+
+Build:
+$ erlc +debug_info *.erl
+
+Run:
+$ erl
+1> test:test().

@@ -1,0 +1,15 @@
+((A 1) (B 2) (C 4) (D 8) (E 16))
+
+     (EDCBA 31)
+        /  \
+   (E 16)  (DCBA 15)
+              /  \
+          (D 8)  (CBA 7)
+                   /  \
+               (C 4)  (BA 3)
+                       /  \
+                   (B 2) (A 1)
+
+For general N,
+to encode the most frequent symbol 1 bit is required,
+to encode the least frequent symbol N-1 bits are required.
